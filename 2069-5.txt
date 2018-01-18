@@ -1,0 +1,21 @@
+//a program to count the words and character in a line using pointer.//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char str[50];
+    int i,cw=0,c=0;
+    printf("Enter the line:\n");
+    gets(str);
+    for(i=0; *(str+i)!=0; i++)
+    {
+        if(*(str+i)==' ')
+        {
+            cw++;
+        }
+        c++;
+    }
+    printf("\nNumber of words:%d",cw+1);
+    printf("\nNumber of characters:%d",c);
+    getch();
+}

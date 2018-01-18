@@ -1,0 +1,34 @@
+//a program to read an integers value and write odd and even in diff file//
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    FILE *fpodd,*fpeven;
+    int a[50],c=0,i=0;
+    char ch[3];
+    fpodd=fopen("ODD.txt","w");
+    fpeven=fopen("EVEN.txt","w");
+    do
+    {
+        printf("Enter the number :\t");
+        scanf("%d",&a[c]);
+        c++;
+        printf("Do you want to enter another number?[yes OR no]\t");
+        scanf("%s",ch);
+    } while(strcmp(ch,"no")!=0);
+    for(;i<c;i++)
+    {
+        if(a[i]%2==0)
+        {
+            fprintf(fpeven,"%d",a[i]);
+        }
+        else
+        {
+            fprintf(fpodd,"%d",a[i]);
+        }
+    }
+    fclose(fpeven);
+    fclose(fpodd);
+    getch();
+}

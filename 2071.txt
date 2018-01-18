@@ -1,0 +1,11 @@
+                                                                   2071
+
+1.WAP a program to check whether the entered year is leap year or not?
+
+2.WAP to find out the sum of digits of the numbers until the number becomes one digit number.
+
+3.WAP using pointer to swap the value of two variables where the swapping operation is performed in the separate function.
+
+4.WAP a program to read a string and rewrite it in the alphabetical order.
+
+5.WAP that asks order of the matrices and read these matrices.Find the multiplication matrix if order of matrices is suitable for the multiplication.  

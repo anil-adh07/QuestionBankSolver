@@ -1,0 +1,43 @@
+//a program to read a matrix and raise its power by 3//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[6][6],i,j,m,n;
+    printf("Enter the order of matrix:\t");
+    scanf("%d%d",&m,&n);
+    printf("Enter the elements of the matrix:\t");
+    for(i=0; i<m; i++)
+    {
+        for(j=0; j<n; j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\nthe matrix you entered is: \n");
+    for(i=0; i<m; i++)
+    {
+        for(j=0; j<n; j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    for(i=0; i<m; i++)
+    {
+        for(j=0; j<n; j++)
+        {
+            a[i][j]=a[i][j]*a[i][j]*a[i][j];
+        }
+    }
+    printf("The resultant matrix is:\n");
+    for(i=0; i<m; i++)
+    {
+        for(j=0; j<n; j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    getch();
+}

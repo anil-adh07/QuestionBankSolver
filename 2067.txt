@@ -1,0 +1,10 @@
+1.WAP to read the numbers from the keyboard and check for the palindrome.
+
+2.WAP a programe to read the matrix of user defined order and raise power to 3 to each elements of the matrix and display the result.
+
+3.WAP to read the matrix of any order and display the transpose of the read matrix.
+
+4..WAP a program using recursion to compute the sum of the following series.
+1^2-2^2+3^2-4^2+. . . . . . . . .+(-1)^(n+1)n^2 without using the pow function.You should read the value of n from the user.
+
+5.WAP to read name and roll no of user defined students from user and store them in the file.If the file already contains data,your file should add new data at the end of the file.

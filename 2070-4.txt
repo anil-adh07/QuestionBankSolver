@@ -1,0 +1,50 @@
+//*a program to find the height between two stds using structure*//
+#include<stdio.h.>
+#include<conio.h>
+struct students
+{
+    int feet,inches;
+};
+void main()
+{
+
+    struct students s1,s2,diff;
+    printf("enter the height of first student:\t");
+    scanf("%d%d",&s1.feet,&s1.inches);
+    printf("enter the height of the second student:\t");
+    scanf("%d%d",&s2.feet,&s2.inches);
+    if(s1.feet>s2.feet)
+    {
+        if(s1.inches<s2.inches)
+        {
+            s1.inches=s1.inches+12;
+            s1.feet=s1.feet-1;
+        }
+        diff.feet=s1.feet-s2.feet;
+        diff.inches=s1.inches-s2.inches;
+    }
+    else if(s2.feet>s1.feet)
+    {
+        if(s2.inches<s1.inches)
+        {
+            s2.inches=s2.inches+12;
+            s2.feet=s2.feet-1;
+        }
+        diff.feet=s2.feet-s1.feet;
+        diff.inches=s2.inches-s1.inches;
+    }
+    else
+    {
+        if(s1.inches>s2.inches)
+        {
+            diff.inches=s1.inches-s2.inches;
+        }
+        else
+        {
+            diff.inches=s2.inches-s1.inches;
+        }
+        diff.feet=0;
+    }
+    printf("the difference between the heights is %d feet and %d inches",diff.feet,diff.inches);
+    getch();
+}

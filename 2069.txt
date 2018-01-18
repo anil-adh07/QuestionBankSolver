@@ -1,0 +1,23 @@
+                                                                       2069
+
+1.WAP a program to generate the following pattern using unformatted output function.
+       k
+      ok
+     wok
+    hwok
+   chwok
+  lchwok
+ ulchwok
+pulchwok
+
+2.WAP to find whether a number is prime or not using function.The function should take the number as an argument and return the value to the main function.
+
+3.WAP to find the second largest number in an array of n numbers. Read the value of n and elemets of the array from the user.
+
+4.Create an array of structure named Employee with name and salary as the structure member and the array of the structure is passed to the function
+which sorts in ascending order on the basis of salary and display the sorted array from the main.
+
+5.Using a pointer concept, WAP to count the number of the words and the character in a line of the text entered by the user.
+
+6.WAP to read the integers from the user until user says "no".After reading the data write all the odd numbers to a file named ODD and all the even numbers to the file named EVEN.
+'  

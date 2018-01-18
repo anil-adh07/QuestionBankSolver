@@ -1,0 +1,50 @@
+//a program to arrange the structure in ascending according to the salary//
+#include<stdio.h>
+#include<conio.h>
+struct Employee
+{
+    char name[15];
+    float salary;
+};
+void sort(struct Employee[],int);
+void main()
+{
+    struct Employee E[20];
+    int n,i;
+    printf("Enter the number of the Employee:\t");
+    scanf("%d",&n);
+    printf("\n");
+    for(i=0; i<n; i++)
+    {
+        printf("Enter the name:\t");
+        scanf("%s",&E[i].name);
+        printf("Enter the salary:\t");
+        scanf("%f",&E[i].salary);
+        printf("\n");
+    }
+    sort(E,n);
+    printf("\nThe sorted form is:\n");
+    for(i=0; i<n; i++)
+    {
+        printf("\nName:  %s",E[i].name);
+        printf("\nsalary: %.3f\n",E[i].salary);
+    }
+    getch();
+}
+void sort(struct Employee E[],int n)
+{
+    int p,c;
+    struct Employee temp;
+    for(p=0; p<n-1; p++)
+    {
+        for(c=0; c<n-1-p; c++)
+        {
+            if(E[c].salary>E[c+1].salary)
+            {
+                temp=E[c];
+                E[c]=E[c+1];
+                E[c+1]=temp;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+//a program to calculate the sum of the series//
+#include<stdio.h>
+#include<conio.h>
+int fun(int);
+void main()
+{
+    int n,s;
+    printf("Enter the number if the terms:\t");
+    scanf("%d",&n);
+    s=fun(n);
+    printf("\nSum=%d",s);
+    getch();
+}
+int fun(int n)
+{
+    int sign=1,i;
+    if(n==0)
+    {
+        return(0);
+    }
+    else
+    {
+        for(i=1;i<n;i++)
+        {
+            sign=sign*-1;
+        }
+        return(sign*n*n+fun(n-1));
+    }
+}

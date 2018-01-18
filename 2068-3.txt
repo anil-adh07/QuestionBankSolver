@@ -1,0 +1,28 @@
+//a program to find the HCF and LCM//
+#include<stdio.h>
+#include<conio.h>
+void calc(int ,int,int*,int*);
+void main()
+{
+int a,b,hcf,lcm;
+printf("enter two numbers:\t");
+scanf("%d%d",&a,&b);
+calc(a,b,&hcf,&lcm);
+printf("HCF=%d\nLCM=%d",hcf,lcm);
+getch();
+}
+void calc(int x,int y,int *p,int*q)
+{
+    int i,min;
+    min=x<y?x:y;
+    for(i=min;i>=1;i--)
+    {
+       if(x%i==0&&y%i==0)
+       {
+       *p=i;
+       break;
+       }
+    }
+    *q=(x*y)/(*p);
+}
+

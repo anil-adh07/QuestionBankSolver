@@ -1,0 +1,22 @@
+//a program to read info of the stds and add on them//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    FILE *fp;
+    int i,rollno,n;
+    char name[15],ch;
+    fp=fopen("student2.txt","a");
+    printf("\nenter the number of the students:\t");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    printf("\nEnter the name of %dth student:\t",i);
+    scanf("%s",name);
+    printf("\nEnter the roll no of the %d student:\t",i);
+    scanf("%d",&rollno);
+    fprintf(fp,"NAME:%s\nROLL NO:%d",name,rollno);
+    }
+    fclose(fp);
+    getch();
+}

@@ -1,0 +1,27 @@
+//a program to read the marks of the students and display total marks using structure//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    struct student
+    {
+        char name[15],snb[8];
+        float marks[6],total;
+    } s;
+    int i=0;
+    s.total=0;
+    printf("Enter the name:\t");
+    scanf("%s",s.name);
+    printf("Enter the symbol number:\t");
+    scanf("%s",s.snb);
+    printf("Enter the marks of maths phy che bio comp and eng respectively:\t");
+    for(i=0; i<6; i++)
+    {
+        fflush(stdin);
+        scanf("%f",&s.marks[i]);
+        s.total=s.total+s.marks[i];
+    }
+
+printf("\n\nTotal marks of the student is %f",s.total);
+getch();
+}

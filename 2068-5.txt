@@ -1,0 +1,24 @@
+//a  program to find the sum of non-negative using recursion//
+#include<stdio.h>
+#include<conio.h>
+int sum(int);
+void main()
+{
+    int n,s;
+    printf("how many terms:\t");
+    scanf("%d",&n);
+    s=sum(n);
+    printf("\nSum=%d",s);
+    getch();
+}
+int sum(int n)
+{
+    if(n==0)
+    {
+        return 0;
+    }
+    else
+    {
+        return (n+sum(n-1));
+    }
+}

@@ -1,0 +1,27 @@
+//*a program to rewrite the read string in alphabetical order*//
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    char str[20],temp;
+    int i,j,l;
+    printf("enter the string:\t");
+    gets(str);
+    l=strlen(str);
+    for(i=0; i<l-1; i++)
+    {
+        for(j=i+1; j<l; j++)
+        {
+            if(str[i]>str[j])
+            {
+                temp=str[i];
+                str[i]=str[j];
+                str[j]=temp;
+            }
+        }
+    }
+    printf("The string in alphabetical order is:\n");
+    puts(str);
+    getch();
+}

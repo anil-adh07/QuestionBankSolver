@@ -1,0 +1,27 @@
+//a program to check palindrome//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    long int num,temp,rev=0;
+    int rem;
+    printf("Enter the number to be checked:\t");
+    scanf("%d",&num);
+    temp=num;
+    do
+    {
+        rem=num%10;
+        rev=rev*10+rem;
+        num=num/10;
+    }
+    while(num!=0);
+    if (rev==temp)
+    {
+        printf("\nThe number %d, you entered is palindrome!",rev);
+    }
+    else
+    {
+        printf("\nThe number %d, you entered ISNOT palindrome!",temp);
+    }
+    getch();
+}

@@ -1,0 +1,11 @@
+                                                               2070
+
+1.WAP to read a number until -1 is encountered.Also count the number of even and odd numbers entered by the user.
+
+2.WAP using a function that returns the largest number from an array of numbers that is passed to the function.
+
+3.WAP to read two matrices from user add them and display the result in the matrix form.
+
+4.WAP to read the heights of the two students and display the difference between their heights use feet and inches as the members of the structure to define height.
+
+5.WAP  to read a string from the user and use a user defined function to copy the content of the read string into another character array changing lower case letter to upper case if any.Use pointer concept to process the string.

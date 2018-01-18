@@ -1,0 +1,24 @@
+//*a program to find out the sum of the digits until the number becomes one digit*//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int num,rem=0,sum=0;
+    printf("enter the number:\t");
+    scanf("%d",&num);
+    do
+    {
+        sum=0;
+        do
+        {
+            rem=num%10;
+            sum=sum+rem;
+            num=num/10;
+        }
+        while(num!=0);
+        num=sum;
+    }
+    while(sum/10!=0);
+    printf("the sum since upto single digit is %d.",sum);
+    getch();
+}

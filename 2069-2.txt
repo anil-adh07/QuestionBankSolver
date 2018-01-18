@@ -1,0 +1,39 @@
+//*a program to check the number for prime using function*//
+#include<stdio.h>
+#include<conio.h>
+int checkprime(int );
+void main()
+{
+    int num;
+    printf("Enter the number to be checked:\t");
+    scanf("%d",&num);
+    if(checkprime(num)==1)
+    {
+        printf("\n%d is a prime number.",num);
+    }
+    else
+    {
+        printf("\n%d is not a prime number.",num);
+    }
+    getch();
+}
+int checkprime(int a)
+{
+    int j,count=0;
+     for(j=1;j<=a;j++)
+        {
+            if(a%j==0)
+            {
+                count++;
+            }
+        }
+        if(count==2)
+        {
+         return 1;
+        }
+        else
+        {
+            return 0;
+        }
+
+}

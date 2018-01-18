@@ -1,0 +1,37 @@
+//a program to store data in the file and display it //
+#include<stdio.h>
+#include<conio.h>
+struct student
+{
+    char name[15],address[15],phno[10];
+};
+void main()
+{
+    int n,i;
+    FILE *fp;
+    struct student s[10];
+    fp=fopen("student.txt","w");
+    printf("Enter the number of the students:\t");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\nEnter the name of %dth student:\t",i+1);
+        scanf("%s",s[i].name);
+        printf("\nEnter the address of %dth students:\t",i+1);
+        scanf("%s",s[i].address);
+        printf("\nEnter the phone number of %dth student:\t",i+1);
+        scanf("%s",s[i].phno);
+    }
+    fclose(fp);
+    fopen("student.txt","r");
+    do
+    {
+        for(i=0;i<n;i++)
+        {
+            printf("\n\nThe info of %dth student is:\n",i+1);
+        printf("NAME:%s\nADDRESS:%s\nPhone Number:%s\n\n",s[i].name,s[i].address,s[i].phno);
+        }
+}while(fread(&s,sizeof(s),1,fp)==1);
+fclose(fp);
+getch();
+}

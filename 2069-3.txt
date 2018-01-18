@@ -1,0 +1,29 @@
+//a program to find the ssecond largest number stored in the array//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[100],n,p,c,temp,i;
+    printf("How many numbers are there in the array:\t");
+    scanf("%d",&n);
+    printf("\nEnter the numbers of the array:\t");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+
+    }
+    for(p=0;p<n-1;p++)
+    {
+        for(c=0;c<n-1-p;c++)
+        {
+            if(a[c]>a[c+1])
+            {
+                temp=a[c];
+                a[c]=a[c+1];
+                a[c+1]=temp;
+            }
+        }
+    }
+    printf("\nThe second largest number in the array is %d.",a[n-2]);
+    getch();
+}

@@ -1,0 +1,9 @@
+1.WAP to display the prime number with in a given range using function.
+
+2.WAP a programe to open the file.Define the structure variable that hold the name,address and telephone number of a students.Ask the user for the number of the student records that has to be filed.Read in the structure for each student and write the structure in the file.After having read all the records ,read in the content of the file and display them.
+
+3.WAP to read two integers from the users.Pass it to the function that calculates the HCF and LCM.Display the result from the main function.
+  
+4..Create a structure student containing name,symbol number,marks of 6 subjects and total marks as its members.WAP that uses this structure and reads data for a student and gives the total marks as the output.
+
+5.WAP to find the sum of the given non-negative integer numbers using recursive function.

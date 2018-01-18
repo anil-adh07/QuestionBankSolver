@@ -1,0 +1,23 @@
+//* a program to print a pattern*//
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    char ch[10]="pulchwok";
+    int i,j,k,l;
+    l=strlen(ch);
+    for(i=0;i<l;i++)
+    {
+        for(j=l-1-i;j>0;j--)
+        {
+        printf(" ");
+        }
+        for(k=l-1-i;k<l;k++)
+        {
+            putchar(ch[k]);
+        }
+        printf("\n");
+    }
+    getch();
+}

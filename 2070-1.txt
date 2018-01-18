@@ -1,0 +1,22 @@
+//*aprogram to count even and odd until -1 is entered*//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n=0,co=0,ce=0;
+    printf("enter the numbers:\t");
+    while(n!=-1)
+    {
+        scanf("%d",&n);
+        if(n%2==0)
+        {
+            ce++;
+        }
+        else
+        {
+            co++;
+        }
+    }
+    printf("You have entered %d odd numbers and %d even numbers.",co-1,ce);
+    getch();
+}
