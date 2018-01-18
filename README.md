@@ -1,2 +1,2 @@
-# QuestionBankSolver
-Simple Project Based On C 
+QuestionBankSolver
+It is a simple project based on C. It actually solves the old question collections.
